@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Klymovets Denys CV</title>
+    <script src="scripts.js"></script>
+   <link rel="stylesheet" href="style.css"</style>
+    
+</head>
+<body>
+    <main>
+
+        <div class="flex-container">
+
+            <div class="flex-item-left">
+
+                <div class="flex-item-image" id="profilePicture">
+                    <img src="images/profilePhoto.jpg" class="image">
+                </div>
+
+                <section class"border-style">
+                    <h2>My Contacts</h2>
+                    <p>Phone Number: +380996815973</p>
+                    <p>Email: den.kli2511@gmail.com</p>
+                    <p>Telegram: dj_fuego</p>
+                </section>
+
+                <section>
+                    <h2>About me</h2>
+                    <div>
+                        I am an active, motivated, communicable and responsible person. Able to learn fast, find creative solutions and approaches.
+                        Worked in IT field as a SEO Specialist
+                        </div>
+                </section>
+
+                <section>
+                    <h2>Hard Skills</h2>
+                    <ul>
+                        <li>C#/.NET</li>
+                        <li>OOP</li>
+                        <li>LINQ</li>
+                        <li>Basic SQL</li>
+                        <li>SOLID WPF</li>
+                        <li>GIT</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Soft Skills</h2>
+                    <ul>
+                        <li>Teamplayer</li>
+                        <li>Have experience with IT work processes</li>
+                        <li>Able to learn fast and have a big desire to develop myself as a software developer</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="flex-item-middle">
+
+                <h1>Klymovets Denys CV</h1>
+
+                <section>
+                    <h2>Professional Experience</h2>
+                    <h3>English Teacher, Self-employed</h3>
+                    <p>2016 – Present</p>
+                    <ul>
+                        <li>Private and group lessons for children and adults.</li>
+                    </ul>
+                    <h3>Cleveroad, SEO Specialist, Linkbuilder</h3>
+                    <p>07.2020 - 04.2022</p>
+                    <ul>
+                        <li>Internal SEO</li>
+                        <li>Linkbuilding</li>
+                        <li>Creating technical tasks for copywriters</li>
+                        <li>Suggested approaches of improving website which were implemented</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Education</h2>
+                    <h3>Dnipro State Agrarian and Economic University</h3>
+                    <ul>
+                        <li>Masters in Puiblic Management and Administration</li>
+                        <p>Completed in 2020</p>
+                        <li>Bachelor of Veterinary Medicine</li>
+                        <p>Completed in 2018</p>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Ukrainian - Native Speaker</li>
+                        <li>Russian - Native Speaker</li>
+                        <li>English - Upper Intermediate</li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <div class="flex-container-right">
+
+                <section onload="document.form1.text1.focus()">
+                    <form action="/submit-form" method="post">
+                        <h3>
+                            Leave your contacts and I will write you soon
+                        </h3>
+                        <div>
+                    <label for="Name">Name/Company:</label>
+                        </div>
+                        <div>
+                    <input type="text" required/>
+                        </div>
+                        <div>
+                    <label for="Email">Email:</label>
+                        </div>
+                        <div>
+                    <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                        </div>
+                        <div>
+                    <label for="PhoneNumber">Phone Number:</label>
+                        </div>
+                        <div>
+                    <input type="tel" pattern="[0-9]{10}" required/>
+                        </div>
+                        <div>
+                    <label for="message">And here you can add some words for better communication:</label>
+                        </div>
+                        <div>
+                    <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <div>
+                    <button class="buttonGetInTouch buttonHover" onclick="GetInTouch()">Get in touch</button>
+                        </div>
+                        </form>
+                    </section>
+
+            </div>
+
+        </div>
+    </main>
+    </div>
+</body>
+</html>
